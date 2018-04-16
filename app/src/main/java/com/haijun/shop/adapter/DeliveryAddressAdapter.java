@@ -24,7 +24,7 @@ import java.util.List;
 public class DeliveryAddressAdapter extends BaseAdapter {
     private Context mContext;
     private List<DeliveryAddress> goodsList;
-    private int mCurSelectedPosition;  //当前列表中选中的位置（单选的情况）
+    private int mCurSelectedPosition = -1;  //当前列表中选中的位置（单选的情况）
 
     public DeliveryAddressAdapter(Context mContext, List<DeliveryAddress> goodsList) {
         this.mContext = mContext;

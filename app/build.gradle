@@ -6,8 +6,8 @@ android {
         applicationId "com.haijun.shop.pailaidai"
         minSdkVersion 17
         targetSdkVersion 21
-        versionCode 103
-        versionName "1.0.3"
+        versionCode 104
+        versionName "1.0.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         //multiDexEnabled true

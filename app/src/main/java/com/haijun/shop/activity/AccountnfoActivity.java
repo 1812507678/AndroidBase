@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import com.haijun.shop.R;
 import com.haijun.shop.bean.User;
+import com.haijun.shop.util.DialogUtil;
+import com.haijun.shop.util.ToastUtil;
 import com.haijun.shop.util.UserUtil;
 import com.haijun.shop.view.CircleImageView;
 
@@ -78,9 +80,10 @@ public class AccountnfoActivity extends BaseActivity {
 	}
 
 	class MyOnClicklListener implements View.OnClickListener{
-		Intent intent = new Intent(AccountnfoActivity.this, ModifyAccountItemActivity.class);
+
 		@Override
 		public void onClick(View view) {
+			Intent intent = new Intent(AccountnfoActivity.this, ModifyAccountItemActivity.class);
 			switch (view.getId()){
 				//选择头像
 				case R.id.rl_personcenter_persondata:
@@ -147,6 +150,7 @@ public class AccountnfoActivity extends BaseActivity {
 								}
 
 							}else {
+								ToastUtil.showToask("上传失败，请检查网络是否正常");
 								Log.i(TAG,"上传失败error:   "+e);
 							}
 						}
